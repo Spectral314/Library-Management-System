@@ -21,7 +21,7 @@ void MainMenu::show(){
 
         switch(choice){
             case 1: UserSurface(); break;
-            case 2: std::cout<<"to be developed\n"; break;
+            case 2: std::cout<<"to be developed\n"; system("pause");system("cls");break;
             case 3: BookSurface(); break;
             case 4: std::cout<<"Even Now the Competitors are passing through pages.\n"; break;
             default:
@@ -52,6 +52,7 @@ void MainMenu::UserSurface(){
             operater.showUserInfo(operater.searchUser(tempId));
             break;
         case 3:
+            system("cls");
             show();
             break;
         default:

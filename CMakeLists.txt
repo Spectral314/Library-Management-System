@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
-project(Library)
+project(MyProject)
+
 
 add_executable(program
     main.cpp

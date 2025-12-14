@@ -142,13 +142,22 @@ void Books::BorrowNewBook(){
             std::cout<<"You wanna borrow this book? Y/N\n";
             std::cin>>ch;
             if(ch == 'Y'){
-                BorrowBook = *BorrowBook.searchBook2(author);
-                //执行藏本数量减一（未做）
-                BorrowBook.volume -= 1;
-                std::cout<<"You've got it\n";
-                std::cout<<BorrowBook.title<<"Left: "<<BorrowBook.volume<<std::endl;
-                system("pause");
-                system("cls");
+                if(BorrowBook.ForVip == 0 ||(BorrowBook.ForVip==1&&currentUser->memberyet==1)){
+                    std::cout<<currentUser->memberyet<<std::endl;
+                    BorrowBook = *BorrowBook.searchBook2(author);
+                    //执行藏本数量减一（未做）
+                    BorrowBook.volume -= 1;
+                    std::cout<<"You've got it\n";
+                    std::cout<<BorrowBook.title<<"Left: "<<BorrowBook.volume<<std::endl;
+                    system("pause");
+                    system("cls");
+                }
+                else {
+                    std::cout<<"You can borrow books by becoming a member.\n";
+                    system("pause");
+                    system("cls");
+                }
+                return;
             }
             else if(ch == 'N')return ;
             else {std::cout<<"Error Input!\n";return ;}
