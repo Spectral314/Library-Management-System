@@ -1,2 +1,28 @@
+# 构建文件
 build/
 *.exe
+program
+
+# IDE文件
+.vscode/
+*.sln
+*.vcxproj*
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.ninja
+
+# 编译产物
+*.obj
+*.o
+*.pdb
+*.ilk
+*.dll
+*.lib
