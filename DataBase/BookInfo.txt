@@ -1,0 +1,10 @@
+One Hundred Years of Solitude,Garcia Marquez,15,0
+Ordinary World,Lu Yao,23,0
+The Three-Body Problem,Liu Cixin,18,0
+To Live,Yu Hua,30
+Love in the Time of Cholera,Garcia Marquez,12,1
+Shop of Solace,Keigo Higashino,25,0
+Sapiens: A Brief History of Humankind,Yuval Noah Harari,10,1
+The Little Prince,Antoine de Saint-Exupery,40,0
+Fortress Besieged,Qian Zhongshu,20
+White Night Walk,Keigo Higashino,14,1
